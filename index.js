@@ -48,6 +48,12 @@ convertBtn.addEventListener("click", function() {
     convert()
 })
 
+valueInput.addEventListener("blur", function() {
+    if (valueInput.value === "") {
+        valueInput.value = 20
+    }
+})
+
 function convert() {
     const userInput = valueInput.value
 
